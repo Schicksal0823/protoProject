@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>网易教育产品部</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/x-ico" href="images/sync.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+</head>
+
+<body>
+    <!-- 通知栏 -->
+    <div id="tip">
+        <div class="container">
+            <p>网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！
+                <a href="http://study.163.com/smartSpec/intro.htm#/smartSpecIntro" target="_blank">立即查看&gt;</a>
+                <span id="tipClose">不再提醒&nbsp;&nbsp;&times;</span>
+            </p>
+        </div>
+    </div>
+    <div id="mask"></div>
+    <!--导航栏-->
+    <nav id="Navigation">
+        <nav class="container">
+            <!--导航LOGO-->
+            <a class="navbar-brand" href="#">
+                <p class="logo"><span class="logoA">EDU</span>网易教育产品部</p>
+            </a>
+            <span id="follow">+ 关注</span>
+            <span id="followSuc">&nbsp;&radic;&nbsp;已关注<span id="cancel">取消</span></span>
+            <span class="funs">粉丝 45</span>
+            <!-- 导航目录 -->
+            <div class="nav">
+                <a href="http://open.163.com/" target="_blank">网易公开课</a>
+                <a href="http://study.163.com/" target="_blank">云课堂</a>
+                <a href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a>
+                <span class="search"></span>
+            </div>
+        </nav>
+    </nav>
+    <!--登入栏-->
+    <div id="login">
+        <div>
+            <a class="loginClose">&times;</a>
+        </div>
+        <form class="loginForm">
+            <input name="username" type="text" class="username" placeholder="手机号或邮箱" value="" />
+            <input name="password" type="password" class="password" placeholder="密码" value="" />
+            <button type="button" class="signin">登录</button>
+            <button type="button" class="signup">注册</button>
+        </form>
+
+    </div>
+
+    <!--轮播图-->
+    <div id="banner">
+        <div id="list" class="list">
+            <a href="http://open.163.com/" target="_blank"><img src="images/banner1.jpg" alt="" /></a>
+            <a href="http://study.163.com/" target="_blank"><img src="images/banner2.jpg" alt="" /></a>
+            <a href="http://www.icourse163.org/" target="_blank"><img src="images/banner3.jpg" alt="" /></a>
+        </div>
+        <ul id="buttons" class="buttons">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div id="arrowP" class="pre">
+            <span>&lt</span>
+        </div>
+        <div id="arrowN" class="next">
+            <span>&gt</span>
+        </div>
+    </div>
+
+    <!--产品简介-->
+    <div id="abstract">
+        <div class="container">
+            <div class="media">
+                <div class="media-img">
+                    <img src="images/open.png" alt="" />
+                </div>
+                <div class="media-Text">
+                    <h2>网易公开课</h2>
+                    <p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+                    <a href="http://open.163.com/" target="_blank">了解更多 &gt;</a>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-img">
+                    <img src="images/study.png" alt="" />
+                </div>
+                <div class="media-Text">
+                    <h2>云课堂</h2>
+                    <p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+                    <a href="http://study.163.com/" target="_blank">了解更多 &gt;</a>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-img">
+                    <img src="images/icourse.png" alt="" />
+                </div>
+                <div class="media-Text">
+                    <h2>中国大学MOOC</h2>
+                    <p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+                    <a href="http://www.icourse163.org/" target="_blank">了解更多 &gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--图片展示-->
+    <div id="picWrap">
+        <div class="showpic">
+            <a><img src="images/picture1.jpg" alt="" /></a>
+            <a><img src="images/picture2.jpg" alt="" /></a>
+            <a><img src="images/picture3.jpg" alt="" /></a>
+            <a><img src="images/picture4.jpg" alt="" /></a>
+            <a><img src="images/picture5.jpg" alt="" /></a>
+        </div>
+    </div>
+
+    <!--主内容区-->
+    <div id="content">
+        <div class="container">
+            <!-- 左侧内容区 -->
+            <div class="contentLeft">
+                <div class="tab">
+                    <h3 class="product on">产品设计</h3>
+                    <h3 class="program">编程语言</h3>
+                </div>
+
+                <div class="courselist">
+                    <ul class="course">
+                        <!-- <li class="courseLi">
+                            <div class="img"><img src="images/picture1.jpg" alt="" /></div>
+                            <div class="title">标题1</div>
+                            <div class="orgName">机构1</div>
+                            <div class="hot">人数 1</div>
+                            <div class="discount">价格1</div>
+
+                            <div class="mDialog">
+                                <div class="uHead">
+                                    <img class="pic" src="images/picture1.jpg" />
+                                    <div class="uInfo">
+                                        <h3 class="uTit">'+ opt.name +'表格中的数字表示支持该属性的第一个浏览器版本号。</h3>
+                                        <div class="uHot">
+                                            <span class="uNum">'+ opt.learnerCount +'</span>人在学
+                                        </div>
+                                        <div class="uPub">发布者：
+                                            <span class="uOri">'+ opt.provider + '</span>
+                                        </div>
+                                        <div class="uCategory">分类：
+                                            <span class="uTag">'+ opt.categoryName + '</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uIntro">'+ opt.description +
+                                    '表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。
+                                </div>
+                            </div>
+                        </li>
+                        <li class="courseLi">
+                            <div class="img"><img src="images/picture2.jpg" alt="" /></div>
+                            <div class="title">标题1</div>
+                            <div class="orgName">机构1</div>
+                            <div class="hot">人数 1</div>
+                            <div class="discount">价格1</div>
+
+                            <div class="mDialog">
+                                <div class="uHead">
+                                    <img class="pic" src="images/picture2.jpg" />
+                                    <div class="uInfo">
+                                        <h3 class="uTit">'+ opt.name +'表格中的数字表示支持该属性的第一个浏览器版本号。</h3>
+                                        <div class="uHot">
+                                            <span class="uNum">'+ opt.learnerCount +'</span>人在学
+                                        </div>
+                                        <div class="uPub">发布者：
+                                            <span class="uOri">'+ opt.provider + '</span>
+                                        </div>
+                                        <div class="uCategory">分类：
+                                            <span class="uTag">'+ opt.categoryName + '</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uIntro">'+ opt.description +
+                                    '表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。
+                                </div>
+                            </div>
+                        </li>
+                        <li class="courseLi">
+                            <div class="img"><img src="images/picture3.jpg" alt="" /></div>
+                            <div class="title">标题1</div>
+                            <div class="orgName">机构1</div>
+                            <div class="hot">人数 1</div>
+                            <div class="discount">价格1</div>
+
+                            <div class="mDialog">
+                                <div class="uHead">
+                                    <img class="pic" src="images/picture3.jpg" />
+                                    <div class="uInfo">
+                                        <h3 class="uTit">'+ opt.name +'表格中的数字表示支持该属性的第一个浏览器版本号。</h3>
+                                        <div class="uHot">
+                                            <span class="uNum">'+ opt.learnerCount +'</span>人在学
+                                        </div>
+                                        <div class="uPub">发布者：
+                                            <span class="uOri">'+ opt.provider + '</span>
+                                        </div>
+                                        <div class="uCategory">分类：
+                                            <span class="uTag">'+ opt.categoryName + '</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uIntro">'+ opt.description +
+                                    '表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。
+                                </div>
+                            </div>
+                        </li>
+                        <li class="courseLi">
+                            <div class="img"><img src="images/picture4.jpg" alt="" /></div>
+                            <div class="title">标题1</div>
+                            <div class="orgName">机构1</div>
+                            <div class="hot">人数 1</div>
+                            <div class="discount">价格1</div>
+
+                            <div class="mDialog">
+                                <div class="uHead">
+                                    <img class="pic" src="images/picture4.jpg" />
+                                    <div class="uInfo">
+                                        <h3 class="uTit">'+ opt.name +'表格中的数字表示支持该属性的第一个浏览器版本号。</h3>
+                                        <div class="uHot">
+                                            <span class="uNum">'+ opt.learnerCount +'</span>人在学
+                                        </div>
+                                        <div class="uPub">发布者：
+                                            <span class="uOri">'+ opt.provider + '</span>
+                                        </div>
+                                        <div class="uCategory">分类：
+                                            <span class="uTag">'+ opt.categoryName + '</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uIntro">'+ opt.description +
+                                    '表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。
+                                </div>
+                            </div>
+                        </li>
+                        <li class="courseLi">
+                            <div class="img"><img src="images/picture5.jpg" alt="" /></div>
+                            <div class="title">标题1</div>
+                            <div class="orgName">机构1</div>
+                            <div class="hot">人数 1</div>
+                            <div class="discount">价格1</div>
+
+                            <div class="mDialog">
+                                <div class="uHead">
+                                    <img class="pic" src="images/picture5.jpg" />
+                                    <div class="uInfo">
+                                        <h3 class="uTit">'+ opt.name +'表格中的数字表示支持该属性的第一个浏览器版本号。</h3>
+                                        <div class="uHot">
+                                            <span class="uNum">'+ opt.learnerCount +'</span>人在学
+                                        </div>
+                                        <div class="uPub">发布者：
+                                            <span class="uOri">'+ opt.provider + '</span>
+                                        </div>
+                                        <div class="uCategory">分类：
+                                            <span class="uTag">'+ opt.categoryName + '</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uIntro">'+ opt.description +
+                                    '表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。表格中的数字表示支持该属性的第一个浏览器版本号。
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="pagination">
+                    <ul>
+                        <li class="ele btn">&lt;</li>
+                        <li class="ele on">1</li>
+                        <li class="ele">2</li>
+                        <li class="ele">3</li>
+                        <li class="ele">4</li>
+                        <li class="ele">5</li>
+                        <li class="ele">6</li>
+                        <li class="ele">7</li>
+                        <li class="ele">8</li>
+                        <li class="ele btn">&gt;</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 右侧内容区 -->
+            <div class="contentRight">
+                <div class="providerabout">
+                    <h3 class="title">机构介绍</h3>
+                    <p>观看下面的视频来了解吧:</p>
+                    <img id="videoimg" src="images/video.jpg" alt="" />
+                </div>
+
+                <div id="providervideo" class="providervideo">
+                    <div>
+                        <p class="text">请观看下面的视频:</p>
+                        <a id="close" class="close">&times;</a>
+                    </div>
+                    <video id="video" src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4"
+                        controls autobuffer>您的浏览器不支持video标签</video>
+                </div>
+
+                <div class="hotlist">
+                    <h3 class="title">最热排行</h3>
+                    <ul id="ulist" class="ulist">
+                        <!-- <li>
+                            <div>
+                                <img class="hotlistPic" src="images/video.jpg" alt="' + opt.name + '" />
+                            </div>
+                            <div>
+                                <h5 class="hotlistTitle">' + opt.name + AAAA'</h5>
+                                <span class="hotlistUserCount">' + opt.lc + '</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img class="hotlistPic" src="images/video.jpg" alt="' + opt.name + '" />
+                            </div>
+                            <div>
+                                <h6 class="hotlistTitle">' + opt.name + '</h6>
+                                <span class="hotlistUserCount">' + opt.lc + '</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img class="hotlistPic" src="images/video.jpg" alt="' + opt.name + '" />
+                            </div>
+                            <div>
+                                <p class="hotlistTitle">' + opt.name + '</p>
+                                <span class="hotlistUserCount">' + opt.lc + '</span>
+                            </div>
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footerinfo">
+                <!-- 备案信息 -->
+                <p class="logo"><span class="logoA">EDU</span>网易教育产品部</p>
+                <p class="text">&copy; 2014 icourse163.org 浙ICP备08114786号-1</p>
+                <p class="text">icourse.cn 京ICP备12020869号-2 京公安网备110102000459-2</p>
+            </div>
+
+            <div class="footerlink">
+                <!-- 链接 -->
+                <div class="footer-item">
+                    <ul>
+                        <p class="linktext">友情链接:</p>
+                        <li><a href="http://open.163.com/" target="_blank">网易公开课</a></li>
+                        <li><a href="http://study.163.com/" target="_blank">网易云课堂</a></li>
+                        <li><a href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <ul>
+                        <p class="linktext">我们:</p>
+                        <li><a href="#" target="_blank">关于</a></li>
+                        <li><a href="#" target="_blank">联系</a></li>
+                        <li><a href="#" target="_blank">关注 <img src="images/weibo.png" title="weibo" alt="" /></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <ul>
+                        <p class="linktext">更多:</p>
+                        <li><a href="#" target="_blank">常见问题</a></li>
+                        <li><a href="#" target="_blank">意见反馈</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="javascripts/index.js"></script>
+</body>
+
+</html>
